@@ -26,3 +26,42 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
+# Application with CRUD Using:
+  - adonis
+  - validação
+  - Fila com Redis
+  - Paginação
+  - Hook
+  - sentry
+
+
+# The application does:
+  - User registration
+  - Authentication
+  - Password recovery
+  - Password Reset
+  - Upload files
+  - Creation of projects with tasks
+  - Validate routes
+  - Paging
+  - Sending emails
+
+# aplicação com CRUD utilizando:
+  - adonis
+  - validação
+  - Fila com Redis
+  - Paginação
+  - Hook
+  - sentry
+ 
+# A aplicação faz:
+  - Cadastro de usuário
+  - Autenticação
+  - Recuperação de senha
+  - Resete de senha
+  - Upload de arquivos
+  - Criação de projetos com tarefas
+  - Valida rotas
+  - Paginação
+  - Envio de emails
