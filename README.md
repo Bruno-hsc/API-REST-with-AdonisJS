@@ -46,7 +46,7 @@ adonis migration:run
   - Paging
   - Sending emails
 
-# aplicação com CRUD utilizando:
+# Aplicação com CRUD utilizando:
   - adonis
   - validação
   - Fila com Redis
