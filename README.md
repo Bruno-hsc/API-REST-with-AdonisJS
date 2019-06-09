@@ -35,7 +35,8 @@ adonis migration:run
   - Hook
   - sentry
 
-## The application does:
+
+# The application does:
   - User registration
   - Authentication
   - Password recovery
