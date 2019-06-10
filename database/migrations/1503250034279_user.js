@@ -15,7 +15,7 @@ class UserSchema extends Schema {
         .notNullable()
         .unique()
       table.string('password', 60).notNullable()
-      table.string('token') // vamos usar para fazer a recuperação de senha
+      table.string('token')
       table.timestamp('token_created_at')
       table.timestamps()
     })

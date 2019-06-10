@@ -4,8 +4,6 @@ const Env = use('Env')
 
 module.exports = {
   connection: Env.get('MAIL_CONNECTION', 'smtp'),
-  // aqui precisamos alterar a port que vem inicialmente como 2525(statica)
-  // entao alteramos para poder alterar ela pelo arq .env
   smtp: {
     driver: 'smtp',
     pool: true,

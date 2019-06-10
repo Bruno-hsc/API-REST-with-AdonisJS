@@ -1,6 +1,5 @@
 'use strict'
 
-// antl library para fazer as traduções nos testes, nas validações
 const Antl = use('Antl')
 
 class Session {
@@ -15,7 +14,6 @@ class Session {
   }
 
   get messages () {
-    // validation nome do arq que criamos no resources/locales
     return Antl.list('validation')
   }
 }

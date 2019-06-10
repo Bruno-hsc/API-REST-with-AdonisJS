@@ -23,9 +23,6 @@ const aliases = {}
 
 const commands = []
 
-// jobs, ultilizados depois de instalar o kue para gerencias filas
-// nessa var vai estar a fila de jobs, OBS exportada mais abaixo.
-// OBS: as caminhos são copiados depois de rodar o comando para criar o job
 const jobs = ['App/Jobs/NewTaskMail']
 
 module.exports = { providers, aceProviders, aliases, commands, jobs }

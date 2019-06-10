@@ -3,12 +3,9 @@
 const Task = use('App/Models/Task')
 
 class TaskController {
-  // aqui vamos usar o param porq vamos retornar nesse index apenas as taks
-  // do project que estamos mostrando.
   async index ({ params }) {
     const tasks = await Task.query()
       .where('project_id', params.projects_id)
-      // para carregar tbm o user da task
       .with('user')
       .fetch()
 
@@ -16,9 +13,6 @@ class TaskController {
   }
 
   async store ({ params, request }) {
-    // OBS: dentro do store porq a rota create é para formulario
-    // buscar os dados da req, OBS: nao vamos precisar enviar o project_id pelos
-    // dados pois na rota criada em Routes  ja vem o project_id no endereço
     const data = request.only([
       'user_id',
       'title',
@@ -27,15 +21,12 @@ class TaskController {
       'file_id'
     ])
 
-    // cria a tabela com todos esses dados(...data) e o project id que vai buscar dos
-    // params
     const task = await Task.create({ ...data, project_id: params.projects_id })
 
     return task
   }
 
   async show ({ params }) {
-    // busca a task, nao vai precisar do id do project
     const task = await Task.findOrFail(params.id)
 
     return task
